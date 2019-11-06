@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Mikhail Malev](https://up.htmlacademy.ru/adaptive/18/user/223754).
-* Наставник: Никита Шевцов.
+* Наставник: [Никита Шевцов](https://htmlacademy.ru/profile/id1251615)
 
 ---
 
