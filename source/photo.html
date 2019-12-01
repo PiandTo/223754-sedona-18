@@ -1,103 +1,135 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="wrapper">
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="" width="226px" height="30px" alt="Welcome to Sedona">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" aria-label="Открыть меню" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a class="site-list__link">Главная</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Фото и видео</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Форма отзыва</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="#">Html academy</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="page-promo">
-    <h2 class="visually-hidden"></h2>
-    <img class="page-promo__img" src="" alt="">
-  </section>
-
-  <main class="photo-list">
-    <header class="photo-list__header">
-      <h2 class="photo-list__title">Фото и видео</h2>
-      <p class="photo-list__description">Не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona: Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="wrapper">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="" width="226px" height="30px" alt="Welcome to Sedona">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" aria-label="Открыть меню" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <span class="main-nav__link">Главная</span>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Html academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <figure class="photo-list__item">
-      <img class="photo-list__photo" src="#" width="226" height="30" alt="Sunny road">
-      <figcaption class="">
-        <h3 class="photo-list__name">Народные просторы</h3>
-        <p class="photo-list__author">Автор фото: Борис</P>
-        <a class="photo-list__icon"><img src=""alt=""></a>
-        <span class="photo-list__likes"></span>
-      </figcaption>
-    </figure>
+    <section class="page-promo">
+      <h2 class="visually-hidden">Welcome to Sedona</h2>
+      <img class="page-promo__image" src="" alt="">
+    </section>
 
-    <figure class="photo-list__item">
-      <img class="photo-list__photo" src="#" width="226" height="30" alt="local flora">
-      <figcaption class="">
-        <h3 class="photo-list__name">Местная растительность</h3>
-        <p class="photo-list__author">Автор фото: Сергей</P>
-        <a class="photo-list__icon"><img src=""alt=""></a>
-        <span class="photo-list__likes"></span>
-      </figcaption>
-    </figure>
+    <main class="page-content">
+      <header class="page-content__header">
+        <h2 class="page-content__title">Фото и видео</h2>
+        <p class="page-content__description">Не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
+      </header>
+      <div class="page-content__wrapper">
+        <figure class="post">
+          <img class="post__photo" src="#" width="226" height="30" alt="Sunny road">
+          <figcaption class="post-description">
+            <h3 class="post__name">Народные просторы</h3>
+            <span class="post__author">Автор фото: Борис</span>
+            <button class="photo__likes">
+              <svg class="photo__icon">
+                <use xlink:href=""></use>
+              </svg>
+              <span class="photo__likes-count"></span>
+            </button>
+          </figcaption>
+        </figure>
 
-    <figure class="photo-list__item">
-      <img class="photo-list__photo" src="#" width="226" height="30" alt="local flora">
-      <figcaption class="">
-        <h3 class="photo-list__name">Дорога на север</h3>
-        <p class="photo-list__author">Автор фото: Петр</P>
-        <a class="photo-list__icon"><img src=""alt=""></a>
-        <span class="photo-list__likes"></span>
-      </figcaption>
-    </figure>
+        <figure class="post">
+          <img class="post__photo" src="#" width="226" height="30" alt="local flora">
+          <figcaption class="post-description">
+            <h3 class="post__name">Местная растительность</h3>
+            <p class="post__author">Автор фото: Сергей</p>
+            <button class="photo__likes">
+              <svg class="photo__icon">
+                <use xlink:href=""></use>
+              </svg>
+              <span class="photo__likes-count"></span>
+            </button>
+          </figcaption>
+        </figure>
 
-    <figure class="photo-list__item">
-      <img class="photo-list__photo" src="#" width="226" height="30" alt="local flora">
-      <figcaption class="">
-        <h3 class="photo-list__name">Мост дьявола</h3>
-        <p class="photo-list__author">Автор фото: Антон</P>
-        <a class="photo-list__icon"><img src=""alt=""></a>
-        <span class="photo-list__likes"></span>
-      </figcaption>
-    </figure>
-  </main>
+        <figure class="post">
+          <img class="post__photo" src="#" width="226" height="30" alt="local flora">
+          <figcaption class="post__description">
+            <h3 class="post__name">Дорога на север</h3>
+            <p class="post__author">Автор фото: Петр</P>
+            <button class="photo__likes">
+              <svg class="photo__icon">
+                <use xlink:href=""></use>
+              </svg>
+              <span class="photo__likes-count"></span>
+            </button>
+          </figcaption>
+        </figure>
 
-  <footer>
-    <b class="page-footer__hashtag">#Visitsedona</b>
-    <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__networks" href="">
-        <img class="social__icon" src="" alt="">
+        <figure class="post">
+          <img class="post__photo" src="#" width="226" height="30" alt="local flora">
+          <figcaption class="post__description">
+            <h3 class="post__name">Мост дьявола</h3>
+            <p class="post__author">Автор фото: Антон</P>
+            <button class="photo__likes">
+              <svg class="photo__icon">
+                <use xlink:href=""></use>
+              </svg>
+              <span class="photo__likes-count"></span>
+            </button>
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <b class="page-footer__hashtag">#Visitsedona</b>
+      <ul class="page-footer__social social-networks">
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="">
+            <svg class="social-network__icon">
+              <use xlink:href=""></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="">
+            <svg class="social-network__icon">
+              <use xlink:href=""></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="">
+            <svg class="social-network__icon">
+              <use xlink:href=""></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <b class="copyright__text">Разрабатано</b>
+        <a class="copyright__link" href="#">
+          <img class="copyright__logo-image" src="" width="226" height="30" alt="HTML Academy">
         </a>
-      </li>
-      <li class="social__item">
-        <a class="social__networks" href="">
-        <img class="social__icon" src="" alt="">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__networks" href="">
-        <img class="social__icon" src="" alt="">
-        </a>
-      </li>
-    </ul>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разрабатано</b>
-      <a class="copyright__link" href="#">
-        <img class="page-footer__logo-image" src="" width="226" height="30" alt="HTML Academy">
-      </a>
-    </div>
-  </footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
+
