@@ -2,7 +2,7 @@
   "name": "sedona-18",
   "version": "17.0.0",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "10.1.x",
@@ -19,14 +19,5 @@
   ],
   "engines": {
     "node": "8.16"
-  },
-  "dependencies": {
-    "autoprefixer": "^9.7.1",
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5"
   }
 }
