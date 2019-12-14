@@ -5,13 +5,9 @@
     <title>Sedona: Главная</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="wrapper">
+  <body class="page">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="#" width="226" height="30" alt="Welcome to Sedona">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" aria-label="Открыть меню" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <span class="main-nav__link">Главная</span>
@@ -26,7 +22,11 @@
             <a class="main-nav__link" href="#">Html academy</a>
           </li>
         </ul>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">Открыть меню</button>
       </nav>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="#" width="226" height="30" alt="Welcome to Sedona">
+      </a>
     </header>
 
     <section class="page-promo">
@@ -42,10 +42,10 @@
       <section class="advantages">
         <figure class="advantages__figure">
           <img class="advantages__image" src="#" width="226" height="30" alt="Welcome to Sedona">
-          <figcaption class="advantages__description">
+          <figcaption class="advantages__content">
             <h3 class="advantages__title">Настоящий городок</h3>
-            <p class="advantages__number">№1</p>
-            <p class="advantages__paragraph">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <span class="advantages__number">№1</span>
+            <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </figcaption>
         </figure>
       </section>
@@ -58,21 +58,21 @@
               <use xlink:href=""></use>
             </svg>
             <h3 class="features__title">Жилье</h3>
-            <p class="features__paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="features__item">
             <svg class="features__image">
               <use xlink:href=""></use>
             </svg>
             <h3 class="features__title">Сувениры</h3>
-            <p class="features__paragraph">Не только китайского, но и местного производства!</p>
+            <p class="features__description">Не только китайского, но и местного производства!</p>
           </li>
           <li class="features__item">
             <svg class="features__icon">
               <use xlink:href=""></use>
             </svg>
             <h3 class="features__title">Еда</h3>
-            <p class="features__paragraph">Всегда заказывайте фирменные бургеры, вы не разочаруетесь!</p>
+            <p class="features__description">Всегда заказывайте фирменные бургеры, вы не разочаруетесь!</p>
           </li>
         </ul>
       </section>
@@ -80,10 +80,10 @@
       <section class="advantages">
         <figure class="advantages__figure">
           <img class="advantages__image" src="#" width="226" height="30" alt="Welcome to Sedona">
-          <figcaption class="advantages__description">
+          <figcaption class="advantages__content">
             <h3 class="advantages__title">Там есть мост дьявола</h3>
             <p class="advantages__number">№2</p>
-            <p class="advantages__paragraph">Да, по нему можно пройтись! если вы осмелитесь, конечно</p>
+            <p class="advantages__description">Да, по нему можно пройтись! если вы осмелитесь, конечно</p>
           </figcaption>
         </figure>
       </section>
@@ -92,24 +92,32 @@
         <li class="advantages__item">
           <h3 class="advantages__title">Небольшая площадь</h3>
           <p class="advantages__number">№3</p>
-          <p class="advantages__paragraph">Все интересные места находятся очень близко</p>
+          <p class="advantages__description">Все интересные места находятся очень близко</p>
         </li>
         <li class="advantages__item">
           <h3 class="advantages__title">Красивая дорога</h3>
           <p class="advantages__number">№4</p>
-          <p class="advantages__paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="advantages__item">
           <h3 class="advantages__title">Мало туристов</h3>
           <p class="advantages__number">№5</p>
-          <p class="advantages__paragraph">Большинство едет в Гранд Каньон и толпится там</p>
+          <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
+
+      <section class="booking-offer">
+        <h1 class="visually-hidden">Предложение бронирования</h1>
+        <h2 class="booking-offer__title">Заинтересовались?</h2>
+        <p class="booking-offer__description">Укажите предполагаемые даты поедки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="booking-offer__button" type="button">Найти гостиницу</button>
+        <iframe class="booking-offer__map" src="#" frameborder="0"></iframe>
+      </section>
     </main>
 
     <footer class="page-footer">
       <b class="page-footer__hashtag">#Visitsedona</b>
-      <ul class="page-footer__social social-networks">
+      <ul class="page-footer__social-networks social-networks">
         <li class="social-networks__item">
           <a class="social-networks__link" href="">
             <svg class="social-network__icon">
@@ -134,7 +142,7 @@
       </ul>
       <div class="copyright">
         <b class="copyright__text">Разрабатано</b>
-        <a class="copyright__link" href="#">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__logo-image" src="#" width="226" height="30" alt="HTML Academy">
         </a>
       </div>

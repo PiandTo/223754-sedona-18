@@ -2,16 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Sedona: Главная</title>
+    <title>Фото</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="wrapper">
+  <body class="page">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="#" width="226" height="30" alt="Welcome to Sedona">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" aria-label="Открыть меню" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <span class="main-nav__link">Главная</span>
@@ -26,7 +22,11 @@
             <a class="main-nav__link" href="#">Html academy</a>
           </li>
         </ul>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">Открыть меню</button>
       </nav>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="#" width="226" height="30" alt="Welcome to Sedona">
+      </a>
     </header>
 
     <section class="page-promo">
@@ -40,67 +40,74 @@
         <p class="page-content__description">Не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
       </header>
       <div class="page-content__wrapper">
-        <figure class="post">
-          <img class="post__photo" src="#" width="226" height="30" alt="Sunny road">
-          <figcaption class="post-description">
-            <h3 class="post__name">Народные просторы</h3>
+        <figure class="post post--big">
+          <img class="post__image" src="#" width="226" height="30" alt="Sunny road">
+          <figcaption class="post__content">
+            <h3 class="post__title">Народные просторы</h3>
             <span class="post__author">Автор фото: Борис</span>
-            <button class="photo__likes">
-              <svg class="photo__icon">
+            <button class="post__likes">
+              <svg class="post__like-icon">
                 <use xlink:href=""></use>
               </svg>
-              <span class="photo__likes-count"></span>
+              <span class="post__likes-count"></span>
             </button>
           </figcaption>
         </figure>
 
         <figure class="post">
-          <img class="post__photo" src="#" width="226" height="30" alt="local flora">
-          <figcaption class="post-description">
-            <h3 class="post__name">Местная растительность</h3>
+          <img class="post__image" src="#" width="226" height="30" alt="local flora">
+          <figcaption class="post__content">
+            <h3 class="post__title">Местная растительность</h3>
             <p class="post__author">Автор фото: Сергей</p>
-            <button class="photo__likes">
-              <svg class="photo__icon">
+            <button class="post__likes">
+              <svg class="post__like-icon">
                 <use xlink:href=""></use>
               </svg>
-              <span class="photo__likes-count"></span>
+              <span class="post__likes-count"></span>
             </button>
           </figcaption>
         </figure>
 
         <figure class="post">
-          <img class="post__photo" src="#" width="226" height="30" alt="local flora">
-          <figcaption class="post__description">
-            <h3 class="post__name">Дорога на север</h3>
+          <img class="post__image" src="#" width="226" height="30" alt="local flora">
+          <figcaption class="post__content">
+            <h3 class="post__title">Дорога на север</h3>
             <p class="post__author">Автор фото: Петр</P>
-            <button class="photo__likes">
-              <svg class="photo__icon">
+            <button class="post__likes">
+              <svg class="post__like-icon">
                 <use xlink:href=""></use>
               </svg>
-              <span class="photo__likes-count"></span>
+              <span class="post__likes-count"></span>
             </button>
           </figcaption>
         </figure>
 
         <figure class="post">
-          <img class="post__photo" src="#" width="226" height="30" alt="local flora">
-          <figcaption class="post__description">
-            <h3 class="post__name">Мост дьявола</h3>
+          <img class="post__image" src="#" width="226" height="30" alt="local flora">
+          <figcaption class="post__content">
+            <h3 class="post__title">Мост дьявола</h3>
             <p class="post__author">Автор фото: Антон</P>
-            <button class="photo__likes">
-              <svg class="photo__icon">
+            <button class="post__like-icon">
+              <svg class="post__icon">
                 <use xlink:href=""></use>
               </svg>
-              <span class="photo__likes-count"></span>
+              <span class="post__likes-count"></span>
             </button>
           </figcaption>
         </figure>
       </div>
+
+      <section class="presentation">
+        <h1 class="visually-hidden">Предложение бронирования</h1>
+        <h2 class="presentation__title">Все еще сомневаетесь?</h2>
+        <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video class="presentation__video" source=""></video>
+      </section>
     </main>
 
     <footer class="page-footer">
       <b class="page-footer__hashtag">#Visitsedona</b>
-      <ul class="page-footer__social social-networks">
+      <ul class="page-footer__social-networks social-networks">
         <li class="social-networks__item">
           <a class="social-networks__link" href="">
             <svg class="social-network__icon">
