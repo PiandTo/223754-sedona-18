@@ -34,91 +34,75 @@
       <img class="page-promo__image" src="#" width="226" height="30" alt="Welcome to Sedona">
     </section>
 
+    <main class="feedback">
+      <div class="feedback__wrapper">
 
-    <main class="review">
-      <div class="review__wrapper">
-
-        <h1 class-"visually-hidden">Анкета клиента</h1>
-        <header class="review__header">
-          <h2 class="review__title">Оставьте свой отзыв</h2>
-          <p class="review__content">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <h1 class="visually-hidden">Анкета клиента</h1>
+        <header class="feedback__header">
+          <h2 class="feedback__title">Оставьте свой отзыв</h2>
+          <p class="feedback__content">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
 
-        <div class="review__customer-name">
-          <h3 class="review__sub-title">Представьтесь:</h3>
-          <form class="review__customer-name-form" action="https://echo.htmlacademy.ru" method="get" name="">
-            <label for="name">Имя*</label>
-            <input id="name" name="name" type="text" required>
-            <label for="surname">Фамилия*</label>
-            <input id="surname" name="surname" type="text" required>
-            <label for="middle-name">Отчество</label>
-            <input id="middle-name" name="middle-name" type="text">
-          </form>
-        </div>
+        <form class="feedback__customer-name-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="feedback__customer-name">
+          <legend class="feedback__subtitle">Представьтесь:</legend>
+            <label class="user_name">Имя*
+              <input name="user_name" type="text" required>
+            </label>
+            <label class="user_surname">Фамилия*
+              <input name="user_surname" type="text" required>
+            </label>
+            <label class="user_middle-name">Отчество
+              <input name="user_middle-name" type="text">
+            </label>
+        </fieldset>
 
-        <svg class="review__vertical-line">
-          <use xlink:href=""></use>
-        </svg>
+        <fieldset class="feedback__customer-appraisal">
+          <legend class="feedback__subtitle">Ваше общее впечатление:</legend>
+            <label class="positive-appraisal">
+              <input name="positive-appraisal" type="radio" checked>Скорее положительное
+            </label>
+            <label class="negative-appraisal">
+              <input name="negative-appraisal" type="radio">Скорее отрицательное
+            </label>
+            <label class="neutral-appraisal">
+              <input name="neutral-appraisal" type="radio"> Затрудняюсь ответить
+            </label>
+        </fieldset>
 
-        <div class="review__customer-appraisal">
-          <h3 class="review__sub-title">Ваше общее впечатление:</h3>
-          <form class="review__customer-name-form" action="https://echo.htmlacademy.ru" method="get" name="">
-            <input id="positive-appraisal" name="positive-appraisal" type="radio" checked>
-            <label for="positive-appraisal">Скорее положительное</label>
-            <input id="negative-appraisal" name="negative-appraisal" type="radio">
-            <label for="negative-appraisal">Скорее отрицательное</label>
-            <input id="neutral-appraisal" name="neutral-appraisal" type="radio">
-            <label for="neutral-appraisal">Затрудняюсь ответить</label>
-          </form>
-        </div>
+        <fieldset class="feedback__customer-contact">
+          <legend class="feedback__subtitle">Контактная информация:</legend>
+            <label class="user_phone">Телефон*
+              <input placeholder="Введите телефон" name="user_phone" type="text" required>
+            </label>
+            <label class="user_email">Электронная почта*
+              <input placeholder="Введите e-mail" name="user_email" type="email" required>
+            </label>
+        </fieldset>
 
-        <div class="review__customer-contact">
-          <h3 class="review__sub-title">Контактная информация:</h3>
-          <svg class="review__horizontal-line">
-            <use xlink:href=""></use>
-          </svg>
-          <form class="review__customer-contact-form" action="https://echo.htmlacademy.ru" method="get" name="">
-            <label for="phone">Телефон*</label>
-            <input id="phone" placeholder="Введите телефон" name="phone" type="text" required>
-            <svg class="review__horizontal-line">
-              <use xlink:href=""></use>
-            </svg>
-            <label for="email">Электронная почта*</label>
-            <input id="email" placeholder="Введите e-mail" name="email" type="text" required>
-            <svg class="review__horizontal-line">
-              <use xlink:href=""></use>
-            </svg>
-          </form>
-        </div>
+        <fieldset class="feedback__visited-place">
+          <legend class="feedback__subtitle">Посещенные достопримечательности:</legend>
+            <label class="bridge-choice">
+              <input name="bridge-choice" type="checkbox" required>Мост Дьявола
+            </label>
+            <label class="mountain-choice">
+              <input name="mountain-choice" type="checkbox" required>Гора-Колокол
+            </label>
+            <label class="park-choice">
+              <input name="park-choice" type="checkbox" required>Слайд-парк
+            </label>
+            <label class="riffs-choice">
+              <input name="riffs-choice" type="checkbox">Красные скалы
+            </label>
+        </fieldset>
 
-        <div class="review__visited-place">
-          <h3 class="review__sub-title">Посещенные достопримечательности:</h3>
-          <svg class="review__horizontal-line">
-            <use xlink:href=""></use>
-          </svg>
-          <form class="review__visited-place-form" action="https://echo.htmlacademy.ru" method="get" name="">
-            <input id="bridge" name="bridge" type="checkbox" required>
-            <label for="bridge">Мост Дьявола</label>
-            <input id="mountain" name="mountain" type="checkbox" required>
-            <label for="mountain">Гора-Колокол</label>
-            <input id="park" name="park" type="checkbox" required>
-            <label for="park">Слайд-парк</label>
-            <input id="riffs" name="riffs" type="checkbox">
-            <label for="riffs">Красные скалы</label>
-          </form>
-        </div>
+        <fieldset class="feedback__emotions">
+          <legend class="feedback__subtitle">Опишите свои эмоции:</legend>
+          <textarea name="opinion">Опишите подробно все свои восторги</textarea>
+        </fieldset>
+        </form>
 
-        <div class="review__emotions">
-          <h3 class="review__sub-title">Опишите свои эмоции:</h3>
-          <svg class="review__horizontal-line">
-            <use xlink:href=""></use>
-          </svg>
-          <form class="review-emotions-form" action="https://echo.htmlacademy.ru" method="get" name="">
-            <input name="opinion" type="textarea" placeholder="Опишите подробно все свои восторги">
-          </form>
-        </div>
-
-        <button class="review__button">Отправить отзыв</button>
+        <button class="feedback__button" type="submit">Отправить отзыв</button>
         <small>
           <p>*-Обязательные поля</p>
         </small>
