@@ -36,87 +36,109 @@
 
     <main class="feedback">
       <div class="feedback__wrapper">
-
-        <h1 class="visually-hidden">Анкета клиента</h1>
-        <header class="feedback__header">
-          <h2 class="feedback__title">Оставьте свой отзыв</h2>
-          <p class="feedback__content">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <header class="feedback__header"></header>
+          <h2 class="visually-hidden">Анкета клиента</h2>
+          <h3 class="feedback__title">Оставьте свой отзыв</h3>
+          <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
 
-        <form class="feedback__customer-name-form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="feedback__customer-name">
-          <legend class="feedback__subtitle">Представьтесь:</legend>
-            <label class="user_name">Имя*
-              <input name="user_name" type="text" required>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="feedback__fieldset">
+            <legend class="feedback__subtitle">Представьтесь:</legend>
+            <label class="feedback__input">
+              <span class="feedback__text feedback__text--info">Имя*</span>
+              <input class="feedback__input-text" name="user-name" type="text" required>
             </label>
-            <label class="user_surname">Фамилия*
-              <input name="user_surname" type="text" required>
+            <label class="feedback__input">
+              <span class="feedback__text">Фамилия*</span class="feedback__text">
+              <input class="feedback__input-text" name="user-surname" type="text" required>
             </label>
-            <label class="user_middle-name">Отчество
-              <input name="user_middle-name" type="text">
+            <label class="feedback__input">
+              <span class="feedback__text">Отчество</span class="feedback__text">
+              <input class="feedback__input-text" name="user-middle-name" type="text">
             </label>
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="feedback__customer-appraisal">
-          <legend class="feedback__subtitle">Ваше общее впечатление:</legend>
-            <label class="positive-appraisal">
-              <input name="positive-appraisal" type="radio" checked>Скорее положительное
+          <fieldset class="feedback__fieldset">
+            <legend class="feedback__subtitle">Ваше общее впечатление:</legend>
+            <label class="feedback__input">
+              <input name="visually-hidden" type="radio">
+              <span class="feedback__input-radio"></span>
+              Скорее положительное
             </label>
-            <label class="negative-appraisal">
-              <input name="negative-appraisal" type="radio">Скорее отрицательное
+            <label class="feedback__input">
+              <input name="visually-hidden" type="radio">
+              <span class="feedback__input-radio"></span>
+              Скорее отрицательное
             </label>
-            <label class="neutral-appraisal">
-              <input name="neutral-appraisal" type="radio"> Затрудняюсь ответить
+            <label class="feedback__input">
+              <input name="visually-hidden" type="radio">
+              <span class="feedback__input-radio"></span>
+              Затрудняюсь ответить
             </label>
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="feedback__customer-contact">
-          <legend class="feedback__subtitle">Контактная информация:</legend>
-            <label class="user_phone">Телефон*
-              <input placeholder="Введите телефон" name="user_phone" type="text" required>
+          <fieldset class="feedback__fieldset">
+            <legend class="feedback__subtitle">Контактная информация:</legend>
+            <label  class="feedback__input">
+              <span class="feedback__text">Телефон*</span>
+              <input class="feedback__input-text" placeholder="Введите телефон" name="user-phone" aria-label="Введите телефон" type="text" required>
             </label>
-            <label class="user_email">Электронная почта*
-              <input placeholder="Введите e-mail" name="user_email" type="email" required>
+            <label  class="feedback__input">
+              <span class="feedback__text">Электронная почта*</span>
+              <input class="feedback__input-text" placeholder="Введите e-mail" name="user-email" aria-label="Введите email"type="email" required>
             </label>
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="feedback__visited-place">
-          <legend class="feedback__subtitle">Посещенные достопримечательности:</legend>
-            <label class="bridge-choice">
-              <input name="bridge-choice" type="checkbox" required>Мост Дьявола
+          <fieldset class="feedback__fieldset">
+            <legend class="feedback__subtitle">Посещенные достопримечательности:</legend>
+            <label class="feedback__input">
+              <input name="visually-hidden" type="checkbox">
+              <span class="feedback__input-checkbox"></span>
+              Мост Дьявола
             </label>
-            <label class="mountain-choice">
-              <input name="mountain-choice" type="checkbox" required>Гора-Колокол
+            <label class="feedback__input">
+              <input name="visually-hidden" type="checkbox">
+              <span class="feedback__checkbox"></span>
+              Гора-Колокол
             </label>
-            <label class="park-choice">
-              <input name="park-choice" type="checkbox" required>Слайд-парк
+            <label class="feedback__input">
+              <input name="visually-hidden" type="checkbox">
+              <span class="feedback__checkbox"></span>
+              Слайд-парк
             </label>
-            <label class="riffs-choice">
-              <input name="riffs-choice" type="checkbox">Красные скалы
+            <label class="feedback__input">
+              <input name="visually-hidden" type="checkbox">
+              <span class="feedback__checkbox"></span>
+              Красные скалы
             </label>
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="feedback__emotions">
-          <legend class="feedback__subtitle">Опишите свои эмоции:</legend>
-          <textarea name="opinion">Опишите подробно все свои восторги</textarea>
-        </fieldset>
+          <fieldset class="feedback__fieldset">
+            <legend class="feedback__subtitle">Опишите свои эмоции:</legend>
+            <textarea class="" name="opinion">Опишите подробно все свои восторги</textarea>
+          </fieldset>
         </form>
 
-        <button class="feedback__button" type="submit">Отправить отзыв</button>
-        <small>
-          <p>*-Обязательные поля</p>
-        </small>
+        <button class="feedback__submit" type="submit">Отправить отзыв</button>
+        <small>*-Обязательные поля</small>
       </div>
     </main>
 
-    <div class="pop-up">
-      <div class="pop-up__wrapper">
-        <h2 class="pop-up__title">Ваш отзыв отправлен!</h2>
-        <p class="pop-up__content">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <div class="popup-btn">
-          <button class="popup-button" type="button">Закрыть окно</button>
-        </div>
-      </div>
+    <section class="popup popup--success">
+      <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+      <p class="popup__content">
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+      </p>
+      <button class="popup-button" type="button">Закрыть окно</button>
+    </section>
+
+    <div class="popup">
+      <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+      <p class="popup__content">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+      </p>
+      <button class="popup-button" type="button">Закрыть окно</button>
     </div>
 
     <footer class="page-footer">
